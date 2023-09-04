@@ -20,5 +20,5 @@ spec:
               service:
                 name: portfolio
                 port:
-                  name: 80
+                  number: 80
       host: spech.dev
