@@ -7,7 +7,7 @@ spec:
   selector:
     app: portfolio
   ports:
-    - port: 80
+    - port: 3050
       protocol: TCP
-      targetPort: 80
+      targetPort: 3000
       nodePort: 31000

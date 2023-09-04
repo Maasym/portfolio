@@ -16,6 +16,6 @@ spec:
         - name: portfolio
           image: azaleh/portfolio:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3000
       imagePullSecrets:
         - name: docker-secret
