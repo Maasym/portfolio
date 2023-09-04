@@ -9,8 +9,8 @@ metadata:
 spec:
   tls:
     - hosts:
-        - test.spech.dev
-      secretName: spech-dev-tls
+        - spech.dev
+      secretName: spech-main-dev-tls
   rules:
     - http:
         paths:
@@ -21,4 +21,4 @@ spec:
                 name: portfolio
                 port:
                   number: 80
-      host: test.spech.dev
+      host: spech.dev
