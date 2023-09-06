@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+import '../index.css'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +10,63 @@ function Navbar() {
             <div className="block lg:hidden ml-8">
                 logo
             </div>
-            <div className="hidden flex flex-row lg:basis:2/4 lg:items-center lg:block">
-                <div>
+            <div className="hidden flex-1 flex-row lg:h-screen lg:items-center lg:block">
+                <div className="h-2/5 pt-20">
                     logo
                 </div>
                 <div>
-                    text
+                    <nav>
+                        <ul className="flex flex-col gap-4 uppercase font-mono text-xl">
+                            <li>
+                                <Link
+                                    className="hover:text-cyan-400"
+                                    activeClass="text-cyan-500"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className="hover:text-cyan-400"
+                                    activeClass="text-cyan-500"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    About me
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className="hover:text-cyan-400"
+                                    activeClass="text-cyan-500"
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Skills
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className="hover:text-cyan-400"
+                                    activeClass="text-cyan-500"
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Projects
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div className="block lg:hidden mr-8">
@@ -38,7 +91,62 @@ function Navbar() {
                 </button>
             </div>
             <div className={`lg:hidden flex flex-col absolute top-24 left-0 bg-slate-900 w-screen h-screen pt-4 items-center ${isOpen ? "block" : "hidden"}`}>
-                dasdas
+                <nav>
+                    <ul className="flex flex-col gap-4 uppercase font-mono text-xl">
+                        <li>
+                            <Link
+                                activeClass="text-cyan-500"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-100}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="text-cyan-500"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-100}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                About me
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="text-cyan-500"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-100}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                Skills
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="text-cyan-500"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-100}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                Projects
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );

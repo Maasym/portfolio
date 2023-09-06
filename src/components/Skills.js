@@ -1,11 +1,11 @@
 import React from 'react';
 
-function About() {
+function Skills() {
     return (
         <div className="flex flex-col  text-3xl font-bold text-slate-200 bg-slate-800 h-screen">
-            About
+            Skills
         </div>
     );
 }
 
-export default About;
+export default Skills;
