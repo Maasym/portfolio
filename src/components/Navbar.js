@@ -11,15 +11,15 @@ function Navbar() {
     return (
         <div className="sticky top-0 border-b-2 border-r-0 lg:border-r-2 lg:border-b-0 border-slate-600 flex flex-row lg:flex-col justify-between lg:justify-center items-center h-24 lg:h-screen">
             <div className="block lg:hidden ml-8">
-
+                <img className="m-1 w-36 h-20 " src={logo} alt="Logo" title="Logo"/>
             </div>
             <div className="hidden flex-1 flex-row lg:h-screen lg:items-center lg:block">
                 <div className="h-2/5 justify-center pt-8">
-
+                    <img className="m-1 w-36 h-36 " src={logo} alt="Logo" title="Logo"/>
                 </div>
                 <div>
                     <nav>
-                        <ul className="flex flex-col gap-4 mt-12 uppercase font-mono text-xl">
+                        <ul className="flex flex-col items-center gap-4 mt-12 uppercase font-mono text-xl">
                             <li>
                                 <Link
                                     className="hover:text-cyan-400"
