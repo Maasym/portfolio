@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import '../index.css'
 
 function Navbar() {
@@ -57,12 +57,12 @@ function Navbar() {
                                 <Link
                                     className="hover:text-cyan-400"
                                     activeClass="text-cyan-500"
-                                    to="projects"
+                                    to="contact"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
                                 >
-                                    Projects
+                                    Contact
                                 </Link>
                             </li>
                         </ul>
@@ -135,14 +135,14 @@ function Navbar() {
                         <li>
                             <Link
                                 activeClass="text-cyan-500"
-                                to="projects"
+                                to="contact"
                                 spy={true}
                                 smooth={true}
                                 duration={500}
                                 offset={-100}
                                 onClick={() => setIsOpen(!isOpen)}
                             >
-                                Projects
+                                Contact
                             </Link>
                         </li>
                     </ul>

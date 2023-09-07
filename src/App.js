@@ -1,8 +1,10 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import About1 from "./components/About-1";
 import About from "./components/About";
+import About2 from "./components/About-2";
+import Skills from "./components/Skills";
 
 
 function App() {
@@ -12,19 +14,20 @@ function App() {
             <div className="sticky top-0 w-12/12 lg:w-60 bg-gray-800 text-slate-200">
                 <Navbar/>
             </div>
-
             <div className="w-12/12 lg:w-full flex flex-col text-slate-200 bg-slate-800">
                 <section id="home">
                     <Home/>
                 </section>
                 <section id="about">
                     <About/>
+                    <About1/>
+                    <About2/>
                 </section>
                 <section id="skills">
                     <Skills/>
                 </section>
-                <section id="projects">
-                    <Projects/>
+                <section id="contact">
+                    <Contact/>
                 </section>
             </div>
         </div>
