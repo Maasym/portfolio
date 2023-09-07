@@ -1,10 +1,10 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Contact from "./components/Contact";
 import About1 from "./components/About-1";
 import About from "./components/About";
 import About2 from "./components/About-2";
 import Skills from "./components/Skills";
+import Empty from "./components/empty";
 
 
 function App() {
@@ -24,10 +24,8 @@ function App() {
                     <About2/>
                 </section>
                 <section id="skills">
+                    <Empty/>
                     <Skills/>
-                </section>
-                <section id="contact">
-                    <Contact/>
                 </section>
             </div>
         </div>

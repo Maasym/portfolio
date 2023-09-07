@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import '../index.css'
+import github from '../assets/github.png'
+import mail from '../assets/mail.png'
+import logo from "../assets/logo.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,15 +11,15 @@ function Navbar() {
     return (
         <div className="sticky top-0 border-b-2 border-r-0 lg:border-r-2 lg:border-b-0 border-slate-600 flex flex-row lg:flex-col justify-between lg:justify-center items-center h-24 lg:h-screen">
             <div className="block lg:hidden ml-8">
-                logo
+
             </div>
             <div className="hidden flex-1 flex-row lg:h-screen lg:items-center lg:block">
-                <div className="h-2/5 pt-20">
-                    logo
+                <div className="h-2/5 justify-center pt-8">
+
                 </div>
                 <div>
                     <nav>
-                        <ul className="flex flex-col gap-4 uppercase font-mono text-xl">
+                        <ul className="flex flex-col gap-4 mt-12 uppercase font-mono text-xl">
                             <li>
                                 <Link
                                     className="hover:text-cyan-400"
@@ -51,18 +54,6 @@ function Navbar() {
                                     duration={500}
                                 >
                                     Skills
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className="hover:text-cyan-400"
-                                    activeClass="text-cyan-500"
-                                    to="contact"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Contact
                                 </Link>
                             </li>
                         </ul>
@@ -132,21 +123,24 @@ function Navbar() {
                                 Skills
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                activeClass="text-cyan-500"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                offset={-100}
-                                onClick={() => setIsOpen(!isOpen)}
-                            >
-                                Contact
-                            </Link>
-                        </li>
                     </ul>
                 </nav>
+                <div className="flex flex-row items-center m-32 lg:hidden">
+                    <a className="mr-8" href="https://github.com/Maasym//" target="_blank">
+                        <img className="m-1 w-12 h-12 " src={github} alt="Github" title="Github"/>
+                    </a>
+                    <a href="mailto:contact@spech.dev" target="_self">
+                        <img className="m-1 w-12 h-12 " src={mail} alt="Mail" title="Mail"/>
+                    </a>
+                </div>
+            </div>
+            <div className="flex flex-row mb-4 hidden lg:flex">
+                <a className="mr-8" href="https://github.com/Maasym//" target="_blank">
+                    <img className="m-1 w-12 h-12 " src={github} alt="Github" title="Github"/>
+                </a>
+                <a href="mailto:contact@spech.dev" target="_blank">
+                    <img className="m-1 w-12 h-12 " src={mail} alt="Mail" title="Mail"/>
+                </a>
             </div>
         </div>
     );

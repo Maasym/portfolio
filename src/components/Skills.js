@@ -26,7 +26,7 @@ import git from '../assets/git.png'
 function Skills() {
 
     return (
-        <div className="mt-24 mb-24 text-slate-200 bg-slate-800">
+        <div className="mt-24 mb-12 text-slate-200 bg-slate-800 lg:h-screen">
             <div className="flex flex-col items-center">
                 <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center text-sm font-mono font-normal">
                     <div className="flex flex-col items-center rounded-md outline outline-1 outline-slate-500">

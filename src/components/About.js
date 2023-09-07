@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
 
     return (
-        <div className="text-slate-200 bg-slate-800">
+        <div className="text-slate-200 bg-slate-800 lg:h-80 mt-8">
             <div className="flex flex-col items-center w-12/12">
                 <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center text-sm font-mono font-normal w-11/12">
                     <div className="flex flex-col items-center rounded-md w-11/12 lg:w-2/5">
