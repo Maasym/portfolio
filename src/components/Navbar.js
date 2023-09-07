@@ -6,7 +6,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="sticky top-0 border-b-2 border-r-0 lg:border-r-2 lg:border-b-0 flex flex-row lg:flex-col justify-between lg:justify-center items-center h-24 lg:h-screen">
+        <div className="sticky top-0 border-b-2 border-r-0 lg:border-r-2 lg:border-b-0 border-slate-600 flex flex-row lg:flex-col justify-between lg:justify-center items-center h-24 lg:h-screen">
             <div className="block lg:hidden ml-8">
                 logo
             </div>
